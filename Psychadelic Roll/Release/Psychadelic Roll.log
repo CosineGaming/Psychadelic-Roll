@@ -1,0 +1,31 @@
+﻿Build started 1/19/2013 12:17:58 PM.
+     1>Project "C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Psychadelic Roll\Psychadelic Roll.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\Psychadelic Roll.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "Psychadelic Roll.cpp"
+         Psychadelic Roll.cpp
+     1>c:\users\judah\desktop\c++\projects\psychadelic roll\psychadelic roll\stb_image.cpp(559): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\judah\desktop\c++\projects\psychadelic roll\psychadelic roll\stb_image.cpp(621): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\judah\desktop\c++\projects\psychadelic roll\psychadelic roll\stb_image.cpp(659): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\judah\desktop\c++\projects\psychadelic roll\psychadelic roll\stb_image.cpp(4552): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Release\Psychadelic Roll.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Psychadelic Roll.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Release\Psychadelic Roll.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Release\Psychadelic Roll.lib" /MACHINE:X86 "Release\Psychadelic Roll.obj"
+         Release\stdafx.obj
+         Generating code
+         Finished generating code
+         Psychadelic Roll.vcxproj -> C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Release\Psychadelic Roll.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Release\Psychadelic Roll.exe;#1" /manifest "Release\Psychadelic Roll.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Release\Psychadelic Roll.unsuccessfulbuild".
+         Touching "Release\Psychadelic Roll.lastbuildstate".
+     1>Done Building Project "C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Psychadelic Roll\Psychadelic Roll.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.48

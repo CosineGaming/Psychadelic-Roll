@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Psychadelic Roll">
+</Property><Property Name="Solution File" Value="C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Psychadelic Roll.sln">
+</Property><Property Name="User Options File" Value="C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Psychadelic Roll.suo">
+</Property><Property Name="Date" Value="Saturday, January 19, 2013">
+</Property><Property Name="Time" Value="11:45 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Psychadelic Roll.sln" Description="File successfully backed up as C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Psychadelic Roll.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="Psychadelic Roll.suo" Description="File successfully backed up as C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Psychadelic Roll.suo.old">
+</Event><Event ErrorLevel="0" Project="Psychadelic Roll" Source="Psychadelic Roll\Psychadelic Roll.vcproj" Description="Converting project file 'C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Psychadelic Roll\Psychadelic Roll.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Psychadelic Roll" Source="Psychadelic Roll\Psychadelic Roll.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Psychadelic Roll" Source="Psychadelic Roll\Psychadelic Roll.vcproj" Description="Done converting to new project file 'C:\Users\Judah\Desktop\C++\Projects\Psychadelic Roll\Psychadelic Roll\Psychadelic Roll.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Psychadelic Roll" Source="Psychadelic Roll\Psychadelic Roll.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Psychadelic Roll.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Psychadelic Roll.sln" Description="Converted">
+</Event></UpgradeLog>
