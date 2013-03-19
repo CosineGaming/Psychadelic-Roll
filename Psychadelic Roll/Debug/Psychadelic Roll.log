@@ -1,13 +1,14 @@
-﻿Build started 3/18/2013 8:52:32 PM.
+﻿Build started 3/19/2013 9:03:08 AM.
      1>Project "C:\Developing\Psychadelic-Roll\Psychadelic Roll\Psychadelic Roll.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "Psychadelic Roll.cpp" stdafx.cpp
-         stdafx.cpp
-         Psychadelic Roll.cpp
-     1>c:\developing\psychadelic-roll\psychadelic roll\dim.h(4): fatal error C1083: Cannot open include file: 'glut.h': No such file or directory
-         Generating Code...
-     1>Done Building Project "C:\Developing\Psychadelic-Roll\Psychadelic Roll\Psychadelic Roll.vcxproj" (Build target(s)) -- FAILED.
+     1>Link:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Developing\Psychadelic-Roll\Debug\Psychadelic Roll.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Psychadelic Roll.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Developing\Psychadelic-Roll\Debug\Psychadelic Roll.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Developing\Psychadelic-Roll\Debug\Psychadelic Roll.lib" /MACHINE:X86 /SAFESEH "Debug\Psychadelic Roll.obj"
+         Debug\stdafx.obj
+     1>Psychadelic Roll.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         Psychadelic Roll.vcxproj -> C:\Developing\Psychadelic-Roll\Debug\Psychadelic Roll.exe
+       Manifest:
+         C:\Program Files\Windows Kits\8.0\bin\x86\mt.exe /nologo /verbose /out:"C:\Developing\Psychadelic-Roll\Debug\Psychadelic Roll.exe.manifest" /manifest "Debug\Psychadelic Roll.exe.intermediate.manifest"
+     1>Done Building Project "C:\Developing\Psychadelic-Roll\Psychadelic Roll\Psychadelic Roll.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:05.08
+Time Elapsed 00:00:02.03
