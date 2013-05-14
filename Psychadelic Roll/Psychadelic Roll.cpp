@@ -22,6 +22,8 @@ Vector ballVector;
 
 bool debugMode;
 
+bool grabMouse = true;
+
 GLfloat gravity = 0;
 
 GLfloat viewY = 1.25;
@@ -79,7 +81,7 @@ void ballUpdate(Object * const self)	{
 
 	if (ball.y < -10.0)	{
 		Object ball(Object::Sphere, 0.0, -0.7, 8.0, 0.2, 30, BLUE, ballUpdate);
-		ballVector = Vector();
+		ballVector = Vector(0.0, 0);
 		gravity = 0;
 	}
 
@@ -128,7 +130,9 @@ void mouseMoved(int x, int y)	{
 	static int counter = 0;
 
 	if (counter > 2)	{
-		ballVector.angle += (float)((float)x - glutGet(GLUT_WINDOW_WIDTH) / 2.0f) / 4.0f;
+		ballVector.angle += (float)((float)x - glutGet(GLUT_WINDOW_WIDTH) / 2.0f) * MOUSE_SEN;
+		viewY += (float)((float)y - glutGet(GLUT_WINDOW_HEIGHT) / 2.0f) / 20.0 * MOUSE_SEN;
+		if (viewY < -0.2)	viewY = -0.9;
 		glutWarpPointer((float)glutGet(GLUT_WINDOW_WIDTH) / 2.0f, (float)glutGet(GLUT_WINDOW_HEIGHT) / 2.0f);
 		counter = 0;
 	}
@@ -156,7 +160,7 @@ void initialize(int iArgc, char ** cppArgv)	{
 	glutCreateWindow("Psychadelic Roll! - Cosine Gaming");
 
 	// Standard
-	glClearColor(0.0, 0.0, 0.0, 0.0);
+	glClearColor(0.12, 0.03, 0.26, 0.0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glFrustum(-1.33, 1.33, -1.0, 1.0, 1.5, 20.0);
@@ -171,7 +175,7 @@ void initialize(int iArgc, char ** cppArgv)	{
 	glLightfv(GL_LIGHT0, GL_SPECULAR, qaWhite);
 	glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
 
-	stage.genTexture("Texture.png", 500, 500, true);
+	stage.genTexture("Texture.tga", 500, 500, false);
 
 	glutSetKeyRepeat(GLUT_KEY_REPEAT_OFF);
 	setKeyboardUpdateFunc(keyAct);

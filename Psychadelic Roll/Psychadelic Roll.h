@@ -12,3 +12,7 @@ int main(int iArgc, char ** cppArgv);
 char * objectIDs = new char[stage.MAX_OBJECTS];
 
 bool keys[256] = { false };
+
+/******************************* Defines and consts *****************************************/
+
+const float MOUSE_SEN = 0.6;

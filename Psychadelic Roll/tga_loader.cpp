@@ -43,13 +43,13 @@ unsigned char *rgb_tga(char *filename, int *w, int *h)
   if (file == NULL)
   {
       printf("Could not open the file: %s\n", filename);
-      exit(0);
+      return NULL;
   }
 
   tga_header header;
 
   //read all 18 bytes of the header
-  fread(header, sizeof(tga_header), 1, file);
+  fread(&header, sizeof(tga_header), 1, file);
 
   //should be image type 2 (color) or type 10 (rle compressed color)
   if (header.data_type != TGA_UNCOMPRESSED_RGB && header.data_type != TGA_RLE_RGB)

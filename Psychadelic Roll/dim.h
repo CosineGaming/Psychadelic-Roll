@@ -2,7 +2,7 @@
 #include <iostream>
 #include <complex>
 #include <glut.h>
-#include "stb_image.cpp"
+#include "tga_loader.cpp"
 
 /* Forward Declarations of this Header */
 class Object;
@@ -21,7 +21,7 @@ GLfloat qaRed[]			= {1.0, 0.0, 0.0, 1.0};
 GLfloat qaBlue[]		= {0.0, 0.0, 1.0, 1.0};
 GLfloat qaWhite[]		= {1.0, 1.0, 1.0, 1.0};
 GLfloat qaLowAmbient[]	= {0.2, 0.2, 0.2, 1.0};
-GLfloat qaFullAmbient[]	= {1.0, 1.0, 1.0, 1.0};
+GLfloat qaFullAmbient[]	= {0.65, 0.65, 0.65, 1.0};
 GLfloat qaStdDiffuse[]	= {0.8, 0.8, 0.8, 1.0};
 
 
@@ -237,12 +237,13 @@ public:
 		int h = height;
 		if (alpha)	int a = 4;
 		else	int a = 3;
+		unsigned char * data = rgb_tga(fileName, &w, &h);
 		glGenTextures(1, &textureid);
 		glBindTexture(GL_TEXTURE_2D, textureid);
-		unsigned char * data = stbi_load(fileName, &w, &h, &a, 0);
-		if (alpha)	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
-		else	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-		stbi_image_free(data);
+		if (alpha)	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_BYTE, data);
+		else	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGBA, GL_BYTE, data);
+		//if (alpha)	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+		free(data);
 	}
 	void getAll(Object * outputTo[], int numInList=MAX_OBJECTS, int exceptID = -1)	{ // Modify numInList default when changing MAX_OBJECTS
 		for (int a=0; a<numInList; a++)	{
@@ -375,7 +376,7 @@ public:
 		glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, qaWhite);
 		glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, qaWhite);
 		glMaterialf(GL_FRONT_AND_BACK, GL_SHININESS, 60.0);
-		glLightfv(GL_LIGHT0, GL_AMBIENT, qaLowAmbient);
+		glLightfv(GL_LIGHT0, GL_AMBIENT, qaFullAmbient);
 
 		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
